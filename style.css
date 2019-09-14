@@ -1,0 +1,23 @@
+@import "compass/css3";
+
+ul {
+  list-style-type: none;
+  padding-left:20px;
+    
+  li:before {
+     content: "-";
+     display: inline-block;
+     width: 10px;
+  }    
+}
+.collapsed ul {
+  display: none;
+}
+li.collapsed:before {
+  content: '+';
+  display: inline-block;
+  width: 10px;
+}  
+li a:hover {
+  cursor: pointer;
+}
